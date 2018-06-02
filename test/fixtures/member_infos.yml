@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  sat_score: 1
+  act_score: 1
+  gpa: 1.5
+  grade: 1
+
+two:
+  first_name: MyString
+  last_name: MyString
+  sat_score: 1
+  act_score: 1
+  gpa: 1.5
+  grade: 1

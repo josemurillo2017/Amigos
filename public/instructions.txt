@@ -1,0 +1,6 @@
+
+Below is what I used to create a sample member_info table
+rails g model member_info first_name:string last_name:string sat_score:integer act_score:integer gpa:float grade:integer
+rake db:migrate
+
+https://code.tutsplus.com/tutorials/active-record-the-rails-database-bridge--net-30489
