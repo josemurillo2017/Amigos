@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flag_id: 1
+  member_id: 1
+  solution_in_process: false
+
+two:
+  flag_id: 1
+  member_id: 1
+  solution_in_process: false

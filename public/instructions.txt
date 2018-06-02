@@ -4,3 +4,6 @@ rails g model member_info first_name:string last_name:string sat_score:integer a
 rake db:migrate
 
 https://code.tutsplus.com/tutorials/active-record-the-rails-database-bridge--net-30489
+
+Flags
+rails g model Flag flag_id:integer member_id:integer solution_in_process:boolean
