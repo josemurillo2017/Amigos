@@ -7,3 +7,4 @@ https://code.tutsplus.com/tutorials/active-record-the-rails-database-bridge--net
 
 Flags
 rails g model Flag flag_id:integer member_id:integer solution_in_process:boolean
+rails g model Flag_info flag_id:integer flag_name:string

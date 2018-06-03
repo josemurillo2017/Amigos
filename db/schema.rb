@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180602223308) do
+ActiveRecord::Schema.define(version: 20180603030731) do
+
+  create_table "flag_infos", force: :cascade do |t|
+    t.string "flag_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "flags", force: :cascade do |t|
     t.integer "flag_id"
