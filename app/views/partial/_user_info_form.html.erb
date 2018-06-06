@@ -1,5 +1,11 @@
 <div class="col">
   <h1 class="text-center"><%= @member.first_name %>'s Info</h1>
+  <%=  simple_form_for(@member, html: { class: 'form-inline' }) do |form|%>
+  <%= label_tag(:sat_math_score, "SAT Math Score") %>
+  <%= number_field_tag(:sat_math_score, value=800, in: 200..800, step: 0.5) %>
+  <%= submit_tag("Search") %>
+  <% end %>
+
   <form>
     <h2> Personal Information</h2>
     <div class="form-row">
@@ -15,8 +21,8 @@
     <h2>College Going Info</h2>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="sat_math_score">SAT Math Score</label>
-        <input type="number" min="0" max="800" step="1" class="form-control" id="sat_math_score" value= <%=@member.sat_score  %>>
+
+
       </div>
 
       <div class="form-group col-md-6">
