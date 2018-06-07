@@ -26,7 +26,7 @@ class WelcomeController < ApplicationController
 
   def risk(risk_boolean, risk_id)
     #Checks if there is a flag
-    current_flag = Flag.where(member_id = @member.id.to_s && flag_id =risk_id.to_s)
+    current_flag = Flag.where({member_id: @member.id.to_s , flag_id: risk_id.to_s})
     flag_exists = !current_flag.empty?
 
 
