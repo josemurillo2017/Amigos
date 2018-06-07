@@ -28,12 +28,11 @@ class WelcomeController < ApplicationController
     #Checks if there is a flag
     current_flag = Flag.where(member_id = @member.id.to_s && flag_id =risk_id.to_s)
     flag_exists = !current_flag.empty?
-    # puts "Checking if flag_exists"
+
 
 
     if risk_boolean and !flag_exists
       #There is a risk and it has not been recorded
-      # puts "There is a risk and it has not been recorded"
       new_flag = Flag.new
       new_flag.flag_id = risk_id
       new_flag.member_id = @member.id
@@ -41,7 +40,6 @@ class WelcomeController < ApplicationController
       new_flag.save
     elsif !risk_boolean and flag_exists
       #There is no risk so we need to delete the flag
-      # puts "There is no risk so we need to delete the flag"
       current_flag.first.destroy
     end
   end
