@@ -1,47 +1,8 @@
-
-
-
-
 <div class="col">
   <h1 class="text-center"><%= @member.first_name %>'s Info</h1>
 
-
   <form>
-    <h2> Personal Information</h2>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="sat_math_score">First Name</label>
-        <input type="number" min="0" max="800" step="1" class="form-control" id="sat_math_score">
-      </div>
-    </div>
+    <h2> College Going Data Points</h2>
 
-    <% grade = @member.grade
-    if grade >9 %>
-
-    <h2>College Going Info</h2>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-
-
-      </div>
-
-      <div class="form-group col-md-6">
-        <label for="sat_reading_score">SAT Reading Score</label>
-        <input type="number" min="0" max="800" step="1" class="form-control" id="sat_reading_score">
-      </div>
-
-      <div class="form-group col-md-6">
-        <label for="act_score">ACT Composite Score</label>
-        <input type="number" min="0" max="36" step="1" class="form-control" id="act_score">
-      </div>
-
-
-    </div>
-    <% end %>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
-</div>
-
-
 </div>
