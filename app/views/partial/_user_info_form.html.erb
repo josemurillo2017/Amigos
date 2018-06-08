@@ -7,7 +7,8 @@
   <%= f.input :last_name %>
   <%= f.button :submit %>
   <% end %>
-  <form>
+
+
     <h2> College Going Data Points</h2>
     <%= simple_form_for @member,method: "post", url: welcome_update_member_form_path do |f| %>
     <%= f.input :act_score %>
@@ -17,5 +18,5 @@
     <% end %>
 
 
-  </form>
+
 </div>

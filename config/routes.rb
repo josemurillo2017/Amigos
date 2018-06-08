@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :member_info
 
   get 'testing/test1'
-  patch 'welcome/update_member_form'
+  post 'welcome/update_member_form'=> "welcome#update_member_form"
+  get 'welcome/update_member_form'=> "welcome#update_member_form"
   get 'welcome/index' => "welcome#index"
 
 

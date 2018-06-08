@@ -1,5 +1,9 @@
 class WelcomeController < ApplicationController
   def index
+    if !params[:member_info].nil?
+      puts params[:member_info[:gpa]]
+    end
+
     members_id = 1
     @member= MemberInfo.find(members_id)
     risk_function(members_id)
@@ -9,9 +13,9 @@ class WelcomeController < ApplicationController
   def update_member_form
     puts "Here"
     @member =MemberInfo.find(1)
-    @member.gpa = params[:member_info[:gpa]]
+    member_values = params[:member_info]
+    @member.gpa = member_values[:gpa]
     @member.save
-    puts params[:member_info[:gpa]]
     puts "Not here"
     redirect_to("welcome/index")
 
