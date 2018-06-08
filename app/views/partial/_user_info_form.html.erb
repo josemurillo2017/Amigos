@@ -2,13 +2,19 @@
   <h1 class="text-center"><%= @member.first_name %>'s Info</h1>
 
 
-  <%= simple_form_for @member,url: welcome_index_path do |f| %>
+  <%= simple_form_for @member,url: welcome_update_member_form_path do |f| %>
   <%= f.input :first_name %>
   <%= f.input :last_name %>
   <%= f.button :submit %>
   <% end %>
   <form>
     <h2> College Going Data Points</h2>
+    <%= simple_form_for @member,method: "post", url: welcome_update_member_form_path do |f| %>
+    <%= f.input :act_score %>
+    <%= f.input :sat_score %>
+    <%= f.input :gpa %>
+    <%= f.button :submit %>
+    <% end %>
 
 
   </form>

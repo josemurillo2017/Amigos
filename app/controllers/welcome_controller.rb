@@ -6,6 +6,17 @@ class WelcomeController < ApplicationController
     @flags = Flag.where(member_id = members_id.to_s)
   end
 
+  def update_member_form
+    puts "Here"
+    @member =MemberInfo.find(1)
+    @member.gpa = params[:member_info[:gpa]]
+    @member.save
+    puts params[:member_info[:gpa]]
+    puts "Not here"
+    redirect_to("welcome/index")
+
+  end
+
   def risk_function(member_id)
     @member = MemberInfo.find(member_id)
 
