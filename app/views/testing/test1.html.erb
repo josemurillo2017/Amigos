@@ -1,6 +1,9 @@
 <h1>Testing#test1</h1>
-<p>Find me in app/views/testing/test1.html.erb</p>
-<%= form_for @user, url: welcome_index_path, html: { method: :put } do |f| %>
-    <%= f.text_field :first_name %>
-    <%= f.submit "Create" %>
-  <% end %>
+
+
+
+<%= simple_form_for @user ,url: welcome_index_path do |f| %>
+<%= f.input :first_name %>
+<%= f.input :last_name %>
+<%= f.button :submit %>
+<% end %>
