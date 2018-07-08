@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post 'welcome/update_member_form'=> "welcome#update_member_form"
   get 'welcome/update_member_form'=> "welcome#update_member_form"
   get 'welcome/index' => "welcome#index"
+  get "welcome/risk" => "welcome#risk_page"
+  get "welcome/solution" => "welcome#solution_page"
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
