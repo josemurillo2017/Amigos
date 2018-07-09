@@ -6,7 +6,7 @@ class WelcomeController < ApplicationController
 
     members_id = 1
     @member= MemberInfo.find(members_id)
-    risk_function(members_id)
+    risk_engine(members_id)
     @flags = Flag.where(member_id = members_id.to_s)
   end
 
