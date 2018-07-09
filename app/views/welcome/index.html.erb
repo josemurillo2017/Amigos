@@ -2,15 +2,16 @@
 <div class="container-fluid">
 
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6 text-center">
       <h1 class="text-center">Current Risks</h1>
-      <ul class="list-group text-center">
+      <div class="btn-group-vertical">
         <% @flags.each do |i| %>
-        <li><%= i.flag_info.flag_name %>  </li>
+        <a type="button" class="btn btn-success" href="/welcome/risk"> <%= i.flag_info.flag_name %></a>
         <% end %>
-      </ul>
+      </div>
     </div>
+    <div class="col-md-6">
 
-
-    <%= render "partial/user_info_form" %>
+      <%= render "partial/user_info_form" %>
+    </div>
   </div>
