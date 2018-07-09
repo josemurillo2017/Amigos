@@ -1,17 +1,11 @@
-
 <div class="container-fluid">
-
   <div class="row">
-    <div class="col-md-6 text-center">
-      <h1 class="text-center">Current Risks</h1>
-      <div class="btn-group-vertical">
-        <% @flags.each do |i| %>
-        <a type="button" class="btn btn-success" href="/welcome/risk"> <%= i.flag_info.flag_name %></a>
-        <% end %>
-      </div>
-    </div>
     <div class="col-md-6">
+      <h1 class="text-center"> <strong>Metrics</strong></h1>
+    </div>
 
-      <%= render "partial/user_info_form" %>
+    <div class="col-md-6">
+      <h1 class="text-center"> <strong>Current Tasks</strong></h1>
     </div>
   </div>
+</div>
